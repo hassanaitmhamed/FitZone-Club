@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone Club - Planning & Tarifs</title>
+    <link rel="stylesheet" href="fitzone.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">FitZone Club</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="activites.html">Activités</a></li>
+                <li><a href="entraineurs.html">Entraîneurs</a></li>
+                <li><a href="planning.html" class="active">Planning / Tarifs</a></li>
+                <li><a href="contact.html" class="btn-inscription">Inscription</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Ouvrir le menu"><i class="fas fa-bars"></i></button>
+    </header>
+
+
+
+    <main class="container">
+
+   
+    <section class="planning-section">
+    <h1>Planning Hebdomadaire des Cours</h1>
+    <div class="table-responsive">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Heure</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                    <th>Samedi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 - 09:00</td>
+                    <td class="class-fitness">Cardio Matinal</td>
+                    <td></td>
+                    <td class="class-yoga">Yoga Matinal</td>
+                    <td class="class-fitness">Step</td>
+                    <td></td>
+                    <td class="class-musculation">Full Body</td>
+                </tr>
+                <tr>
+                    <td>09:30 - 11:00</td>
+                    <td class="class-fitness">Body Sculpt</td>
+                    <td class="class-yoga">Pilates</td>
+                    <td></td>
+                    <td class="class-fitness">Zumba</td>
+                    <td class="class-boxe">Boxe Débutant</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 - 13:30</td>
+                    <td class="class-fitness">Fitness Cardio</td>
+                    <td class="class-musculation">Circuit Training</td>
+                    <td class="class-yoga">Yoga Hatha</td>
+                    <td class="class-fitness">Step Aérobie</td>
+                    <td></td>
+                    <td class="class-musculation">Haltères & Barres</td>
+                </tr>
+                <tr>
+                    <td>14:00 - 16:00</td>
+                    <td class="class-musculation">Musculation</td>
+                    <td class="class-boxe">Boxe</td>
+                    <td class="class-yoga">Stretching</td>
+                    <td></td>
+                    <td class="class-fitness">Body Sculpt</td>
+                    <td class="class-yoga">Yoga Vinyasa</td>
+                </tr>
+                <tr>
+                    <td>16:30 - 18:00</td>
+                    <td class="class-yoga">Pilates</td>
+                    <td></td>
+                    <td class="class-fitness">Zumba</td>
+                    <td class="class-musculation">Full Body</td>
+                    <td></td> <!-- Vendredi, plus de doublon Boxe Débutant -->
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:30 - 20:00</td>
+                    <td class="class-yoga">Yoga</td>
+                    <td class="class-musculation">Circuit Training</td>
+                    <td></td>
+                    <td class="class-yoga">Stretching</td>
+                    <td class="class-boxe">Boxe Débutant</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20:30 - 22:00</td>
+                    <td class="class-fitness">Step Aérobie</td>
+                    <td class="class-yoga">Yoga Hatha</td>
+                    <td class="class-musculation">Haltères & Barres</td>
+                    <td class="class-fitness">Zumba</td>
+                    <td class="class-boxe">Boxe Avancé</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+        <!-- ----------------------- ABONNEMENTS ------------------------ -->
+        <section class="tarifs-section">
+            <h2>Nos Abonnements Flexibles</h2>
+            <p class="subtitle">Choisissez la formule qui vous correspond.</p>
+
+            <div class="tarifs-grid">
+
+                <article class="tarif-card">
+                    <h3>Basic Fit</h3>
+                    <p class="price">250 MAD / Mois</p>
+                    <ul>
+                        <li>Accès Musculation</li>
+                        <li>Accès illimité en heures creuses</li>
+                        <li class="unavailable">Cours collectifs (en option)</li>
+                    </ul>
+                    <a href="contact.html" class="tarif-button">Choisir</a>
+                </article>
+
+                <article class="tarif-card recommended">
+                    <h3>FitZone Pro</h3>
+                    <p class="price">400 MAD / Mois</p>
+                    <ul>
+                        <li>Accès illimité</li>
+                        <li>Cours collectifs inclus</li>
+                        <li>Bilan physique offert</li>
+                    </ul>
+                    <a href="contact.html" class="tarif-button">Le Plus Populaire</a>
+                </article>
+
+                <article class="tarif-card">
+                    <h3>Annual Premium</h3>
+                    <p class="price">3500 MAD / An</p>
+                    <ul>
+                        <li>Accès illimité </li>
+                        <li>Tous les cours collectifs</li>
+                       
+                        <li>1 mois offert</li>
+                    </ul>
+                    <a href="contact.html" class="tarif-button">Choisir</a>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ---------------------- RÉDUCTIONS ÉTUDIANTS ---------------------- -->
+        <section class="tarifs-section">
+            <h2>Réductions Étudiants</h2>
+            <p class="subtitle">Sur présentation d'une carte étudiante.</p>
+
+            <div class="tarifs-grid">
+
+                <article class="tarif-card">
+                    <h3>Étudiant Basic Fit</h3>
+                    <p class="price">180 MAD / Mois</p>
+                    <ul>
+                        <li>Accès Musculation</li>
+                        <li>Accès heures creuses</li>
+                        <li class="unavailable">Cours collectifs</li>
+                    </ul>
+                    <a href="contact.html" class="tarif-button">Choisir</a>
+                </article>
+
+                <article class="tarif-card">
+                    <h3>Étudiant FitZone Pro</h3>
+                    <p class="price">320 MAD / Mois</p>
+                    <ul>
+                        <li>Accès illimité </li>
+                        <li>Cours collectifs inclus</li>
+                        <li>Bilan physique inclus</li>
+                    </ul>
+                    <a href="contact.html" class="tarif-button">Choisir</a>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ------------------ OFFRE DÉCOUVERTE — FAMILLE — DUO ------------------ -->
+        <section class="tarifs-section">
+            <h2>Offres Spéciales</h2>
+            <p class="subtitle">Profitez de nos offres limitées et packs avantageux.</p>
+
+            <div class="tarifs-grid">
+
+        
+
+                <article class="tarif-card">
+                    <h3>Pack Famille</h3>
+                    <p class="price">650 MAD / Mois</p>
+                    <ul>
+                        <li>3 membres inclus</li>
+                        <li>Cours collectifs illimités</li>
+                        <li>-20% sur le 4ème membre</li>
+                    </ul>
+                    <a href="contact.html" class="tarif-button">Choisir</a>
+                </article>
+
+                <article class="tarif-card">
+                    <h3>Réduction Duo</h3>
+                    <p class="price">200 MAD / personne</p>
+                    <ul>
+                        <li>Valable pour 2 personnes</li>
+                        <li>Accès complet</li>
+                        <li>Cours collectifs inclus</li>
+                    </ul>
+                    <a href="contact.html" class="tarif-button">S’inscrire à Deux</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 FitZone Club. Créé par l'équipe : RIDA, YOUSSEF, HASSAN, MOHAMED_ADAM.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
