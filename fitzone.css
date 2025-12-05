@@ -290,6 +290,11 @@ body {
 .class-boxe { background-color: #f5f5e6; color: #f1c40f; font-weight: bold; }
 
 /* 8. Style de la Section Tarifs */
+.tarif-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
 .tarifs-section {
     padding: 40px 0;
     text-align: center;
@@ -997,3 +1002,4 @@ body {
         }
 
         
+
