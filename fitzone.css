@@ -392,6 +392,10 @@ body {
     background: white;
     color: var(--primary-color);
 }
+.tarif-button:hover {
+    background-color: var(--accent-color);
+    transform: scale(1.05);    
+}
 
 /* 9. Style de la Page Contact */
 .contact-section {
@@ -1002,4 +1006,5 @@ body {
         }
 
         
+
 
