@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. Gestion du Menu Hamburger (Responsive)
+    // 1. Gestion du Menu (Responsive)
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.querySelector('.main-nav');
 
@@ -125,4 +125,31 @@ document.addEventListener('DOMContentLoaded', () => {
                     }, 100);
                 }
             });
+
         });
+document.addEventListener('DOMContentLoaded', () => {
+    const prices = document.querySelectorAll('.price');
+    prices.forEach(priceEl => {
+        const target = parseInt(priceEl.getAttribute('data-price'));
+        let count = 0;
+        const interval = setInterval(() => {
+            count += 10;
+            if(count >= target) {
+                count = target;
+                clearInterval(interval);
+            }
+            priceEl.textContent = `${count} MAD / Mois`;
+        }, 20);
+    });
+});
+window.addEventListener('scroll', () => {
+    const reveals = document.querySelectorAll('.reveal');
+    const windowHeight = window.innerHeight;
+    
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < windowHeight - 100){
+            el.classList.add('active');
+        }
+    });
+});
